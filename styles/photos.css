@@ -10,6 +10,7 @@
 .photo-card a {
     color: #E8EFF0;
 }
+
 .photo-card img {
     width: 100%;
 }
@@ -23,4 +24,42 @@
     text-align: center;
 }
 
-/* Your code here */
+@media print {
+
+    .backButton,
+    p:not(.notPrinted) {
+        display: none;
+    }
+
+    .photo-card {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin-right: 5%;
+    }
+
+    .photo-card img {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .photo-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 600px) {
+    .photo-card {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media print {
+    @page {
+        size: landscape;
+    }
+}

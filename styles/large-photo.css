@@ -3,9 +3,11 @@ body {
     color: #E8EFF0;
     text-align: center;
 }
+
 img {
     width: 50%;
 }
+
 a {
     color: #E8EFF0;
 }
@@ -17,5 +19,3 @@ a.backButton {
     z-index: 1;
     text-decoration: none;
 }
-
-/* Your code here */
